@@ -13,6 +13,9 @@
 @end
 
 @implementation Home
+- (IBAction)changeButtonPress:(id)sender {
+    self.lblWelcome.text = @"Mentira!";
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
