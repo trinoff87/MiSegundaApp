@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7DF7745D1F69F5F300F78A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7745C1F69F5F300F78A7F /* main.m */; };
 		7DF774601F69F5F300F78A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7745F1F69F5F300F78A7F /* AppDelegate.m */; };
-		7DF774631F69F5F300F78A7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF774621F69F5F300F78A7F /* ViewController.m */; };
+		7DF774631F69F5F300F78A7F /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF774621F69F5F300F78A7F /* Home.m */; };
 		7DF774661F69F5F300F78A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF774641F69F5F300F78A7F /* Main.storyboard */; };
 		7DF774691F69F5F300F78A7F /* Mi_sEGUNDA_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DF774671F69F5F300F78A7F /* Mi_sEGUNDA_app.xcdatamodeld */; };
 		7DF7746B1F69F5F300F78A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF7746A1F69F5F300F78A7F /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		7DF7745C1F69F5F300F78A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DF7745E1F69F5F300F78A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DF7745F1F69F5F300F78A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7DF774611F69F5F300F78A7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7DF774621F69F5F300F78A7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DF774611F69F5F300F78A7F /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		7DF774621F69F5F300F78A7F /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		7DF774651F69F5F300F78A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DF774681F69F5F300F78A7F /* Mi_sEGUNDA_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mi_sEGUNDA_app.xcdatamodel; sourceTree = "<group>"; };
 		7DF7746A1F69F5F300F78A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,9 @@
 		7DF7745A1F69F5F300F78A7F /* Mi sEGUNDA app */ = {
 			isa = PBXGroup;
 			children = (
-				7DF7745E1F69F5F300F78A7F /* AppDelegate.h */,
-				7DF7745F1F69F5F300F78A7F /* AppDelegate.m */,
-				7DF774611F69F5F300F78A7F /* ViewController.h */,
-				7DF774621F69F5F300F78A7F /* ViewController.m */,
+				7DF774771F69F7B600F78A7F /* Controllers */,
+				7DF774761F69F7AC00F78A7F /* Main */,
+				7DF774751F69F79400F78A7F /* New Group */,
 				7DF774641F69F5F300F78A7F /* Main.storyboard */,
 				7DF7746A1F69F5F300F78A7F /* Assets.xcassets */,
 				7DF7746C1F69F5F300F78A7F /* LaunchScreen.storyboard */,
@@ -80,6 +79,31 @@
 				7DF7745C1F69F5F300F78A7F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DF774751F69F79400F78A7F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		7DF774761F69F7AC00F78A7F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7DF7745F1F69F5F300F78A7F /* AppDelegate.m */,
+				7DF7745E1F69F5F300F78A7F /* AppDelegate.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		7DF774771F69F7B600F78A7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DF774621F69F5F300F78A7F /* Home.m */,
+				7DF774611F69F5F300F78A7F /* Home.h */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DF774631F69F5F300F78A7F /* ViewController.m in Sources */,
+				7DF774631F69F5F300F78A7F /* Home.m in Sources */,
 				7DF774601F69F5F300F78A7F /* AppDelegate.m in Sources */,
 				7DF7745D1F69F5F300F78A7F /* main.m in Sources */,
 				7DF774691F69F5F300F78A7F /* Mi_sEGUNDA_app.xcdatamodeld in Sources */,
