@@ -10,7 +10,9 @@
 
 @interface Home : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lblWelcome;
-
-
 @end
+
+extern NSInteger cont;
+
+
 
